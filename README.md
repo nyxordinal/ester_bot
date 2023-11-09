@@ -29,7 +29,7 @@ Follow these steps to set up and run the Discord bot:
 
 7. For Docker support, follow these additional steps:
    - Build the Docker image:  
-     `docker build -t nyxordinal/ester-bot .`
+     `docker build -t nyxordinal/ester-bot --platform linux/amd64 .`
    - Run the Docker container in the background:
      ```bash
      docker run -d --name mybot \
