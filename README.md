@@ -24,3 +24,18 @@ Follow these steps to set up and run the Discord bot:
 
 6. Run the bot using the following command:  
    `python main.py`
+
+## Docker Support
+
+7. For Docker support, follow these additional steps:
+   - Build the Docker image:  
+     `docker build -t ester-bot .`
+   - Run the Docker container in the background:
+     ```bash
+     docker run -d --name mybot \
+       -e CRON_EXPRESSION="* * * * *" \
+       -e DISCORD_TOKEN=<your-bot-token> \
+       -e CHANNEL_ID=<your-channel-id> \
+       -e USER_ID=<your-user-id> \
+       ester-bot:latest
+     ```
