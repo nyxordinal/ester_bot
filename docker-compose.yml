@@ -1,14 +1,19 @@
 version: '3'
 
 services:
-  mybot:
+  ester-bot:
     image: nyxordinal/ester-bot:latest
-    container_name: mybot
+    container_name: ester-bot
     environment:
       - CRON_EXPRESSION=* * * * *
       - DISCORD_TOKEN=<your-bot-token>
       - CHANNEL_ID=<your-channel-id>
       - USER_ID=<your-user-id>
+      - MORNING_HOUR_START=8
+      - MORNING_HOUR_END=10
+      - EVENING_HOUR_START=21
+      - EVENING_HOUR_END=23
+
     restart: unless-stopped
     deploy:
       resources:
