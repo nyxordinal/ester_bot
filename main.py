@@ -7,10 +7,7 @@ from dotenv import load_dotenv
 from scheduler import Scheduler
 
 load_dotenv()
-intents = discord.Intents.default()
-intents.typing = False
-intents.presences = False
-client = discord.Client(intents=intents)
+client = discord.Client(intents=discord.Intents(messages=True, guilds=True))
 
 
 @client.event
