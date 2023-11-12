@@ -59,8 +59,8 @@ async def send_message():
             )
             db.set(LAST_SENT_DATE_EVENING, current_time)
             await channel.send(get_text("EVENING"))
-        else:
-            print("skip")
+    else:
+        print("invalid channel ID")
 
 
 # start the bot
