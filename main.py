@@ -61,8 +61,6 @@ async def send_message():
             await channel.send(get_text("EVENING"))
         else:
             print("skip")
-    else:
-        print("invalid channel ID")
 
 
 # start the bot
