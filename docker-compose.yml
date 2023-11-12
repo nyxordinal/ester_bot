@@ -5,7 +5,6 @@ services:
     image: nyxordinal/ester-bot:latest
     container_name: ester-bot
     environment:
-      - CRON_EXPRESSION=* * * * *
       - DISCORD_TOKEN=<your-bot-token>
       - CHANNEL_ID=<your-channel-id>
       - USER_ID=<your-user-id>

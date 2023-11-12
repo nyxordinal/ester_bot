@@ -33,7 +33,6 @@ Follow these steps to set up and run the Discord bot:
    - Run the Docker container in the background:
      ```bash
      docker run -d --name mybot \
-       -e CRON_EXPRESSION="* * * * *" \
        -e DISCORD_TOKEN=<your-bot-token> \
        -e CHANNEL_ID=<your-channel-id> \
        -e USER_ID=<your-user-id> \
