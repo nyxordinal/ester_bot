@@ -1,5 +1,5 @@
 # Use a minimal base image
-FROM python:3.8-alpine as builder
+FROM python:3.10-alpine as builder
 
 # Set the working directory
 WORKDIR /app

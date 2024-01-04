@@ -39,6 +39,8 @@ def setup_db():
     yesterday = get_yesterday_date(timezone=timezone)
     db.set(LAST_SENT_DATE_MORNING, yesterday)
     db.set(LAST_SENT_DATE_EVENING, yesterday)
+    if db.get(USER_IDS) == None:
+        db.set(USER_IDS, [])
 
 
 @listen()
