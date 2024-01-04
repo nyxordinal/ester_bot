@@ -20,11 +20,9 @@ with open(SENTENCES_EVENING_FILE, "r") as file:
 
 def get_text(period) -> str:
     if period == "MORNING":
-        # return f"{get_morning_text()} <@{user_id}>"
-        return f"{get_morning_text()} @everyone"
+        return get_morning_text()
     elif period == "EVENING":
-        # return f"{get_evening_text()} <@{user_id}>"
-        return f"{get_evening_text()} @everyone"
+        return get_evening_text()
     else:
         return "Hi!"
 

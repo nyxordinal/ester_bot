@@ -5,6 +5,7 @@ from datetime import datetime
 DB_FILE_JSON = "db.json"
 LAST_SENT_DATE_MORNING = "last_sent_date_morning"
 LAST_SENT_DATE_EVENING = "last_sent_date_evening"
+USER_IDS = "user_ids"
 
 
 class FileDB:
